@@ -7,91 +7,86 @@ All AI agents must strictly follow these instructions.
 
 # 1. Project Overview
 
-> **TODO**: Add a brief description of your project.
+Portfolio website for ToMY F.
 
-**Example:**
-
-```
-This is a web application built with Next.js and TypeScript.
-The app provides user authentication and dashboard features.
-```
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Output**: SSG (Static Site Generation) - `next build` outputs static files to `out/`
+- **Deployment**: Static hosting (e.g., Cloudflare Pages)
 
 ---
 
 # 2. Build & Test
 
-> **TODO**: Add your build and test commands.
-
-**Example:**
-
 ```bash
-# Setup
-npm install
+# Setup (using pnpm)
+pnpm install
 
 # Development
-npm run dev
+pnpm dev                    # Start dev server at http://localhost:3000
 
-# Build
-npm run build
+# Build (SSG)
+pnpm build                  # Generate static files to out/
 
-# Test
-npm test                    # Run all tests
-npm test -- --watch         # Watch mode
-npm run test:coverage       # With coverage
+# Preview (after build)
+pnpm start                  # Run npx serve out
 
-# Lint & Format
-npm run lint                # ESLint
-npm run format              # Prettier
-npm run typecheck           # TypeScript check
+# Lint
+pnpm lint                   # ESLint
 ```
+
+**Note**: No test framework is currently configured.
 
 ---
 
 # 3. Project Structure
 
-> **TODO**: Describe your project structure.
-
-**Example:**
-
 ```
-src/
-├── app/            # Next.js app router pages
-├── components/     # Reusable UI components
-├── lib/            # Utility functions and helpers
-├── hooks/          # Custom React hooks
-├── types/          # TypeScript type definitions
-└── styles/         # Global styles and themes
-
-Key files:
-- src/app/layout.tsx     # Root layout
-- src/lib/api.ts         # API client
-- src/types/index.ts     # Shared types
+/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   ├── globals.css         # Global styles (Tailwind)
+│   └── favicon.ico         # Favicon
+├── public/                 # Static assets
+├── next.config.ts          # Next.js config (SSG output settings)
+├── tsconfig.json           # TypeScript config
+├── eslint.config.mjs       # ESLint config
+├── postcss.config.mjs      # PostCSS config (Tailwind)
+└── package.json            # Dependencies and scripts
 ```
+
+**Path alias**: `@/*` → Relative path from project root
 
 ---
 
 # 4. Code Style
 
-> **TODO**: Define your coding standards.
-
-**Example:**
-
-```
 ## General
-- Use TypeScript for all new files
-- Prefer functional components over class components
-- Use named exports over default exports
+
+- Use TypeScript (strict mode)
+- Use functional components
+- Use default exports (following Next.js App Router conventions)
 
 ## Naming Conventions
-- Components: PascalCase (e.g., UserProfile.tsx)
-- Utilities: camelCase (e.g., formatDate.ts)
-- Constants: SCREAMING_SNAKE_CASE (e.g., MAX_RETRY_COUNT)
-- Types/Interfaces: PascalCase with prefix (e.g., IUserProps, TResponse)
+
+- **Components**: PascalCase (`ProfileCard.tsx`)
+- **Utilities**: camelCase (`formatDate.ts`)
+- **Constants**: SCREAMING_SNAKE_CASE (`MAX_ITEMS`)
+- **Types/Interfaces**: PascalCase without prefix (`Props`, `User`)
+
+## Styling
+
+- Use Tailwind CSS utility classes
+- Keep custom CSS minimal
+- Support dark mode using `dark:` prefix
 
 ## Files
+
 - One component per file
-- Co-locate tests with source files (e.g., Button.tsx, Button.test.tsx)
-```
+- Page components go under `app/`
+- Shared components go under `components/` directory
 
 ---
 
