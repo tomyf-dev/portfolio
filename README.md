@@ -1,77 +1,36 @@
-# agents-template
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A template repository for **AGENTS.md** - instructions for AI coding agents.
+## Getting Started
 
-## What is AGENTS.md?
-
-AGENTS.md is a standardized file that provides instructions and guidelines for AI coding agents (GitHub Copilot, OpenAI Codex, Cursor, Claude Code, Google Jules, etc.) working on your project.
-
-Think of it as a **README for AI agents**: a dedicated place to define rules, conventions, and boundaries that help AI tools work effectively with your codebase.
-
-## Features
-
-This template includes:
-
-- **Branch Rules** - GitHub Flow with support for AI-generated branches
-- **Commit Rules** - Conventional Commits format
-- **Pull Request Rules** - Title format, description requirements
-- **Permissions & Boundaries** - What AI agents can and cannot do
-- **AI Agent Rules** - Testing, code quality, and troubleshooting guidelines
-- **Placeholders** - Ready-to-fill sections for project-specific configuration
-
-## Quick Start
-
-### Option 1: Use as Template
-
-Click the **"Use this template"** button on GitHub to create a new repository with AGENTS.md included.
-
-### Option 2: Copy the File
-
-Download or copy `AGENTS.md` directly into your project's root directory.
+First, run the development server:
 
 ```bash
-curl -o AGENTS.md https://raw.githubusercontent.com/tomyf-dev/agents-template/main/AGENTS.md
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Option 3: Manual Setup
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. Clone this repository
-2. Copy `AGENTS.md` to your project
-3. Fill in the placeholder sections (marked with `> **TODO**`)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Customization
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-After adding AGENTS.md to your project, customize the following sections:
+## Learn More
 
-| Section | Description |
-|---------|-------------|
-| 1. Project Overview | Brief description of your project |
-| 2. Build & Test | Your build, test, and lint commands |
-| 3. Project Structure | Directory layout and key files |
-| 4. Code Style | Coding standards and naming conventions |
-| 10. Additional Notes | External services, environment variables, etc. |
+To learn more about Next.js, take a look at the following resources:
 
-## Supported AI Tools
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This template is compatible with:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- GitHub Copilot (`copilot/*`)
-- OpenAI Codex (`codex/*`)
-- Cursor (`cursor/*`)
-- Claude Code (`claude/*`)
-- Google Jules (`jules/*`)
-- Other AI coding agents
+## Deploy on Vercel
 
-## Contributing
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## References
-
-- [AGENTS.md Official Website](https://agents.md/)
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
