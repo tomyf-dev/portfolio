@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* 選択色 */
+::selection {
+  background: rgba(167, 139, 250, 0.3);
+}
+
+:root {
+  /* テキスト */
+  --foreground: #4a4063;
+  --foreground-muted: #7a6b9e;
+
+  /* アクセント */
+  --primary: #a78bfa;
+  --primary-hover: #ebe5fd;
+  --secondary: #7dd3fc;
+  --glow-dawn: #f0a8c4;
+
+  /* 背景 */
+  --background: #4a4268;
+  --background-card: #ffffff;
+
+  /* プラットフォーム */
+  --qiita: #55c500;
+  --zenn: #3ea8ff;
+  --note: #41c9b4;
+
+  /* シャドウ */
+  --shadow-card: 0 4px 20px rgba(167, 139, 250, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 12px 40px rgba(167, 139, 250, 0.2), 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-profile: 0 8px 32px rgba(167, 139, 250, 0.15), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-glow-dawn: var(--glow-dawn);
+  --color-background: var(--background);
+  --color-background-card: var(--background-card);
+  --color-qiita: var(--qiita);
+  --color-zenn: var(--zenn);
+  --color-note: var(--note);
+  --shadow-card: var(--shadow-card);
+  --shadow-card-hover: var(--shadow-card-hover);
+  --shadow-profile: var(--shadow-profile);
+  --font-sans: var(--font-noto-sans-jp);
+  --animate-ripple: ripple 8s ease-out infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
