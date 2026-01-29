@@ -1,4 +1,217 @@
 {
-  "lastUpdated": "",
-  "articles": []
+  "lastUpdated": "2026-01-29T01:01:31.954Z",
+  "articles": [
+    {
+      "id": "125218731",
+      "title": "【参加レポート】Kiro Meetup Japan #1 に行ってきた — 仕様駆動 × エージェントの“いま”",
+      "description": "9月3日（水）に開催された Kiro Meetup Japan #1 に参加しました。Kiro は AWS が発表した「仕様（Spec）を中心に進める」AIコードエディタです。要件定義から設計・実装計画・品質管理までを一貫で支援するという触れ込みのとおり、現場視点のナレッジがぎっしり詰まった良い会でした。会場はファインディ株式会社の大崎オフィス＆オンライン、ハッシュタグは #kiro_findy ",
+      "url": "https://note.com/tomyf_lvnsk/n/n44b87f8c621e",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/213872522/rectangle_large_type_2_1236107fc8a4cb2747b5649e492ac3a8.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-09-08T11:08:58+09:00",
+      "tags": [
+        "kiro",
+        "kiro_findy",
+        "KiroMeetupJapan"
+      ]
+    },
+    {
+      "id": "121664656",
+      "title": "「ドキュメント駆動開発」と「仕様駆動開発」 : 現場でどう使い分ける？Kiroを使ってみてわかった本質",
+      "description": "はじめに2025年、AWSが新サービス「Kiro」を発表し、Webエンジニア界隈でも大きな話題になりました。Kiroはバイブコーディングによる探索的な開発と、仕様駆動開発（Spec-Driven Development, SDD）による堅牢な開発の両立をうたっています。自分も実際にKiroを触ってみて、初めて“ガチ”の仕様駆動開発に出会いましたが、最初はやり方を勘違いしたり、自分のやり方を見直すき",
+      "url": "https://note.com/tomyf_lvnsk/n/n74c8bab4bd5a",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/207169680/rectangle_large_type_2_5e6921bb83cc48326b8f8d7dc15322c4.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-08-08T16:21:28+09:00",
+      "tags": [
+        "AI",
+        "エンジニア",
+        "SPEC",
+        "kiro",
+        "仕様駆動開発",
+        "ドキュメント駆動開発"
+      ]
+    },
+    {
+      "id": "120840555",
+      "title": "AWSのAI搭載IDE「Kiro（キロ）」を実際に試した詳細レビュー",
+      "description": "はじめに2025年7月にAWSがプレビュー版としてリリースしたAI搭載の統合開発環境「Kiro」を実際に使用してみました。普段はCursorというAIエディタを使っている私が感じた、Kiroならではの良さやCursorとの違いを解説します。\n\nKiroとは？「Kiro（キロ）」はAWSが開発したAIベースのIDEで、プロンプトと呼ばれる自然言語の指示を与えることで、AIが要件定義から設計、タスクの",
+      "url": "https://note.com/tomyf_lvnsk/n/n6371189dfc65",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/205535840/rectangle_large_type_2_c9fa52e7f3e762466de73471eac8d2c2.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-07-31T18:29:46+09:00",
+      "tags": [
+        "Cursor",
+        "kiro",
+        "vibecording",
+        "speccording"
+      ]
+    },
+    {
+      "id": "117337020",
+      "title": "BusinessプランにCopilot Coding Agentが来た！──AIチームメイトと開発する未来がはじまる",
+      "description": "はじめにAWS Summit 2025に参加された皆さま、お疲れ様でした！ 私は2日目に幕張メッセを訪れ、とても刺激的な時間を過ごしました。\n\n今回は、最近試して感動した「GitHub Copilot Coding Agent」について記事をまとめたいと思います。普段からAIアシスタントでコードを書くのには慣れていましたが、このCopilot Coding Agentは一味違います。GitHub上",
+      "url": "https://note.com/tomyf_lvnsk/n/n30bd32f267f1",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/199093084/rectangle_large_type_2_53fb887e02821677cd747d65cd73b97b.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-06-29T20:18:00+09:00",
+      "tags": [
+        "AI",
+        "AIとやってみた",
+        "開発",
+        "Copilot",
+        "issue",
+        "Codespaces"
+      ]
+    },
+    {
+      "id": "116200005",
+      "title": "ChatGPTに2025年宝塚記念を予想させて買ってみた",
+      "description": "はじめにまず最初にお断りしておきますが、筆者は競馬のことを何も知らない完全など素人です。 馬の名前もレースの仕組みもよく分かっていません。ただ、「AIのガチ予想に全部乗っかって本当に当たるのか？」という純粋な興味だけで、人生初めての馬券購入にチャレンジしました。\n\n今年の宝塚記念（2025年）は、最新のGPT-4.5（Deep Research）を使ってAIに予想させ、そのまま実際に馬券を購入して",
+      "url": "https://note.com/tomyf_lvnsk/n/n9b5f52d6ca02",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/196527894/rectangle_large_type_2_9a76be83fe6f6da90b5cfa70bc46b1cc.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-06-16T21:11:12+09:00",
+      "tags": [
+        "競馬予想",
+        "AI",
+        "宝塚記念"
+      ]
+    },
+    {
+      "id": "113703886",
+      "title": "AI時代、エンジニア職はどう変わる？ ~日本ソフト業界の現状と生き残る人材像~",
+      "description": "はじめに近年、生成AI（チャットGPTをはじめとする高度なAIツール）の急速な進化により、ソフトウェア開発の現場にも大きな変化が訪れています。コードの自動生成やテストの自動化など、これまでエンジニアが手作業で行っていた業務の一部をAIが肩代わりできるようになりつつあります。\n\nこうした動向に伴い、エンジニアという職業そのものの将来性について不安や議論が広がっています。「プログラマーはAIに職を奪わ",
+      "url": "https://note.com/tomyf_lvnsk/n/n662b74d675ba",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/191678636/rectangle_large_type_2_a69242d9bcc86aa7f12ed030b401a8b1.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-05-23T15:32:25+09:00",
+      "tags": [
+        "エンジニア"
+      ]
+    },
+    {
+      "id": "109629751",
+      "title": "「とあるSNS」のAI機能について思うこと",
+      "description": "はじめに最近、私が利用している「とあるSNS」上で、AIによる調査結果や要約を目にする機会が非常に増えたように感じています。これは、プラットフォームに統合された新しいAI機能によるものと思われます。非常に便利な機能である一方、その使われ方や情報の扱われ方について、個人的に少し気になる点が出てきました。この記事では、あくまで一個人の感想として、そのAI機能について思うこと、特に情報の信頼性や活用にお",
+      "url": "https://note.com/tomyf_lvnsk/n/n6af5e4c9944b",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/183668169/rectangle_large_type_2_e62307f958a4df81e7c700983ced4240.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-04-11T15:55:45+09:00",
+      "tags": [
+        "AI",
+        "SNS"
+      ]
+    },
+    {
+      "id": "109022206",
+      "title": "エンジニアこそAIエディタで記事を書こう！情報発信を加速させる執筆術",
+      "description": "はじめに日々進化するテクノロジーの最前線にいるエンジニアの皆さん、その知識や経験を発信してみませんか？「でも、記事を書くのは時間がかかるし、文章力にも自信がない…」そう感じている方も多いかもしれません。技術的な知見は豊富でも、それを分かりやすく伝える文章を書くのは、また別のスキルが必要ですよね。\n\nそんなエンジニアの皆さんにこそ、AIエディタの活用をおすすめします。なぜなら、AIエディタはあなたの",
+      "url": "https://note.com/tomyf_lvnsk/n/nf8c70fa7de2e",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/182505257/rectangle_large_type_2_85adc589bd086452b2e45cf4b1171e33.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-04-04T20:54:54+09:00",
+      "tags": []
+    },
+    {
+      "id": "108374416",
+      "title": "手軽さと落とし穴？サプリメントでビタミンを摂るメリット・デメリット徹底解説",
+      "description": "はじめに私たちの健康維持に欠かせない栄養素、ビタミン。本来は日々の食事からバランス良く摂取することが理想ですが、忙しい現代生活の中では、なかなか難しいと感じる方も多いのではないでしょうか？\n\n近年、手軽にビタミンを補給できるサプリメントへの関心が高まっています。ドラッグストアやオンラインショップでも、多種多様なビタミンサプリメントが並んでいます。しかし、「本当に効果があるの？」「摂りすぎても大丈夫",
+      "url": "https://note.com/tomyf_lvnsk/n/n8876dcb59276",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/181249722/rectangle_large_type_2_b2b1e0401dec4697863fb7e804f7e016.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-03-28T17:55:10+09:00",
+      "tags": []
+    },
+    {
+      "id": "107491839",
+      "title": "街角の広告から考える、システム開発の「創造性」と「再現性」〜エンジニアよ、バランスを取れ！〜",
+      "description": "先日、街を歩いていると、あるビジネスフレームワークの広告動画が目に飛び込んできました。そこでは、「再現性」と「クリエイティブ」という、一見相反する二つの概念が巧みに融合されていました。\n\nその時、ふと疑問が湧きました。「システム開発の現場において、この『再現性』と『創造性』はどう位置付けられるのだろう？」 と。\n\n普段、私たちはバグのない安定したシステムを作るために「再現性を重視」し、一方で、新し",
+      "url": "https://note.com/tomyf_lvnsk/n/nc6dc7a228899",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/179592329/rectangle_large_type_2_296d61f9c961c95d3860b2db3a79cd85.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-03-21T09:29:21+09:00",
+      "tags": []
+    },
+    {
+      "id": "106819029",
+      "title": "チームの技術力UP！輪読会で得られる効果と実践方法",
+      "description": "皆さん、こんにちは！日々の業務お疲れ様です。ITエンジニアの皆さんにとって、技術トレンドのキャッチアップやスキルアップは永遠のテーマですよね。\n\n特に最近は、AI技術の進化が目覚ましく、私たちITエンジニアも常に最新情報を追いかける必要があります。実は、この記事を書くきっかけになったのも、まさにAIツールのキャッチアップのために、私の会社で輪読会を始めることになったからなんです。\n\nそこで、今回は",
+      "url": "https://note.com/tomyf_lvnsk/n/n255acb2b1818",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/178415026/rectangle_large_type_2_9f176ad62b719c63cdc8e18089b20f51.jpeg?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-03-10T18:33:43+09:00",
+      "tags": []
+    },
+    {
+      "id": "105998063",
+      "title": "Google WorkspaceのGemini Advancedで4つのモデルを選択できるように！ 2つのProモデルを比較してみた。",
+      "description": "皆さん、こんにちは！\nシステムエンジニアのToMYF(トミー)です。\n\n実は最近 Gemini を愛用していて、仕事中は常にGoogleカレンダーやGoogleメールに加えて、Geminiを開いて働いています。\n今週もいつものように Gemini を開いたらなんと、4つのモデルが選択できるようになっていたことに気が付きました！\n今までは Google Workspace 版の Gemini Adv",
+      "url": "https://note.com/tomyf_lvnsk/n/ne2a308b0cc39",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/176784143/rectangle_large_type_2_b87660bf50d18b8f4ed18dcf5055b880.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-02-28T17:54:59+09:00",
+      "tags": []
+    },
+    {
+      "id": "105647953",
+      "title": "カードゲームは思考力アップの秘密兵器!? 親子で楽しむコツをコミカル解説",
+      "description": "子どもが夢中になって遊べるものといえば、テレビゲームやスマホゲームが真っ先に思い浮かぶかもしれません。でも、「画面ばかり見ていて大丈夫かな？」と心配になる親御さんも多いですよね。そこで今回は、昔から親しまれている カードゲーム に注目！\n実はカードゲームには、頭をフル回転させる仕掛けがたくさんあるんです。子どもはもちろん、大人もハマること必至！　思考力アップに役立つポイントを、ちょっとコミカルにご",
+      "url": "https://note.com/tomyf_lvnsk/n/nac198c193f64",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/176122101/rectangle_large_type_2_eac76c17a9438b71058b7ee3cbd749c2.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-02-24T12:22:27+09:00",
+      "tags": []
+    },
+    {
+      "id": "103664440",
+      "title": "Cloudflareのデータベースサービスを比較してみた",
+      "description": "皆さん、こんにちは！\nシステムエンジニアのToMYF(トミー)です。\nせっかくCloudflareのサービスを活用したハンズオンのレポートを投稿したので、今回はエンジニアらしくシステム開発に関連したお話を持ってきました。\n\nエンジニアなら一度はCloudflare触ってみたくなりますよね。\n私もその一人です。何かサービスを作って触ってみようと思っていたのですが、その際にCloudflareでデータ",
+      "url": "https://note.com/tomyf_lvnsk/n/n5f72b70f87fd",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/174606732/rectangle_large_type_2_1ba68b42ccc8d94c5d363ba452fa6f0f.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-02-14T18:55:51+09:00",
+      "tags": []
+    },
+    {
+      "id": "104233334",
+      "title": "Cloudflare WorkersでLINEミニアプリをホスティングしたハンズオンレポート",
+      "description": "はじめに先日、2025年2月6日開催の 「Cloudflare×LINEミニアプリで実践！モダンな予約システムハンズオン」 に参加してきました​。\n\nこのイベントは、Cloudflareのサービスを活用してLINEミニアプリの開発を体験する内容で、登壇者は LINE APIエキスパートの三浦 耕生さん と Cloudflare社エバンジェリストの亀田 治伸さん でした​。\n\nなぜ参加したかというと",
+      "url": "https://note.com/tomyf_lvnsk/n/nf4556000dc5a",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/173486800/rectangle_large_type_2_82bc47e6cf6f4311ff30ea6d2b5c28bf.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-02-07T13:15:32+09:00",
+      "tags": [
+        "LINE",
+        "開発",
+        "ミニアプリ",
+        "linedc"
+      ]
+    },
+    {
+      "id": "103875469",
+      "title": "ボードゲームで社内のコミュニケーションが円滑化？",
+      "description": "先週の金曜日に会社の同僚4人でボードゲームカフェ「JELLY JELLY CAFE」に行ってきました。\n\n普段は仕事上で絡みが少ない人とも、ボードゲームを通じて楽しく親睦を深めることができたので、会社内でのコミュニケーションにボードゲームが与える影響について考察してみます。\n\n300種類以上のボードゲームが楽しめる「JELLY JELLY CAFE」今回お邪魔した「JELLY JELLY CAFE",
+      "url": "https://note.com/tomyf_lvnsk/n/nd3c05d2bd192",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/172828590/rectangle_large_type_2_35a806a6abea9bae151a9236dd1f34e7.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-02-03T08:25:55+09:00",
+      "tags": []
+    },
+    {
+      "id": "103288969",
+      "title": "ついに花粉症デビュー…？ くしゃみの猛威に怯える日々",
+      "description": "皆さん、こんにちは！\n\nここ数年、春の訪れとともに憂鬱な気分になる人が増えているようです。そう、花粉症です。\n\n実は私も、つい最近、花粉症らしき症状に悩まされるようになりました。\n\n数年前までは「花粉症？ なにそれ美味しいの？」状態だった私。周りの人が鼻をすすり、目をこすっていても、全く他人事でした。\n\nしかし、今年の春は様子が違います。\n\nまだ涙や鼻水、目の充血といった典型的な症状は出ていないも",
+      "url": "https://note.com/tomyf_lvnsk/n/n9ccc0e541f3d",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/171754231/rectangle_large_type_2_539db37a387e7134c085cb7f2be9364e.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-01-27T08:01:28+09:00",
+      "tags": []
+    },
+    {
+      "id": "102768399",
+      "title": "グレシャムの法則と生成AI記事：質と量のバランスを見極める時代",
+      "description": "グレシャムの法則と生成AI記事：質と量のバランスを見極める時代\n\nグレシャムの法則とは何か？\n\nグレシャムの法則は、経済学で広く知られる原則であり、一般的には“悪貨は良貨を駆逐する”として説明されます。この法則は、質の異なる貨幣が同じ額面で流通すると、価値の低い貨幣が市場で優先的に使われ、価値の高い貨幣は貯蔵されて流通から消える現象を指します。簡単に言えば、価値が低いものが価値の高いものを駆逐する",
+      "url": "https://note.com/tomyf_lvnsk/n/n556d4ee43d17",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/170824716/rectangle_large_type_2_32d58ef0af0ab3c8b3c92bf401564662.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-01-20T08:17:35+09:00",
+      "tags": []
+    },
+    {
+      "id": "102320834",
+      "title": "🤖 新年早々にコロナに感染して知ったウイルス事情",
+      "description": "はじめに\n\n新年を迎えたばかりの頃、私は1年間風邪を引くこともなく健康に過ごしていましたが、突然コロナウイルスに感染してしまいました。その際に調べて得た情報を、AIを使ってまとめてみました。\n\nコロナとインフルエンザの同時検査\n\n最近、コロナウイルスとインフルエンザを同時に検査できるキットがあることを知りました。このキットを使用すると、コロナの結果がなんと1分もかからずに出るため、その迅速さには驚",
+      "url": "https://note.com/tomyf_lvnsk/n/n1a90fd56ecc2",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/170011185/rectangle_large_type_2_86be5d2eb8fd70752a1a575898ed9bab.png?fit=bounds&quality=85&width=1280",
+      "publishedAt": "2025-01-14T12:13:39+09:00",
+      "tags": [
+        "生成AI",
+        "コロナ",
+        "インフルエンザ"
+      ]
+    }
+  ]
 }

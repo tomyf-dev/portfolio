@@ -1,4 +1,180 @@
 {
-  "lastUpdated": "",
-  "articles": []
+  "lastUpdated": "2026-01-29T01:01:29.899Z",
+  "articles": [
+    {
+      "id": "150ae8df41a467",
+      "title": "OpenSearch Serverless から Managed へ移行した話 ~日本語検索とカスタムアナライザーの壁があった件について~",
+      "description": "はじめに AWS Amplify Gen2 で検索機能を実装する際、最初は管理の手間が少ない OpenSearch Serverless を採用しました。 「サーバーレスならインフラ管理不要だし、モダンでいいよね」——そんな軽い気持ちでした。 しかし結論から言うと、日本語検索の要件が出てきた時点で Serverless は詰みました。 カスタムアナライザー（Kuromoji 等）が使えないという致",
+      "url": "https://zenn.dev/lnest_knowledge/articles/150ae8df41a467",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ZjodfkI_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenSearch%2520Serverless%2520%25E3%2581%258B%25E3%2582%2589%2520Managed%2520%25E3%2581%25B8%25E7%25A7%25BB%25E8%25A1%258C%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2520%7E%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E6%25A4%259C%25E7%25B4%25A2%25E3%2581%25A8%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E3%2582%25A2%25E3%2583%258A%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B6%25E3%2583%25BC...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-12-12T13:57:01.822+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "Serverless",
+        "検索",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "2a5be36abc44a3",
+      "title": "OpenSearch パイプラインの数だけ積み重なる請求額に絶望して抗った話",
+      "description": "はじめに OpenSearch Ingestion (OSIS) はサーバーレスでデータの取り込み・加工ができる非常に便利なサービスです。 しかし、小規模なプロジェクトで導入しようとした際、「コスト」 という大きな壁にぶつかりました。 特に、Amplify Gen2 などで複数の DynamoDB テーブル（例: Todo, Order, User...）を OpenSearch に同期したい場合",
+      "url": "https://zenn.dev/lnest_knowledge/articles/2a5be36abc44a3",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--3YUmNxmm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenSearch%2520%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25AE%25E6%2595%25B0%25E3%2581%25A0%25E3%2581%2591%25E7%25A9%258D%25E3%2581%25BF%25E9%2587%258D%25E3%2581%25AA%25E3%2582%258B%25E8%25AB%258B%25E6%25B1%2582%25E9%25A1%258D%25E3%2581%25AB%25E7%25B5%25B6%25E6%259C%259B%25E3%2581%2597%25E3%2581%25A6%25E6%258A%2597%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-12-08T16:49:21.747+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "DynamoDB",
+        "AWS CDK",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "dd2120a2fea4c6",
+      "title": "OpenSearch パイプラインの Lambda Processor で別テーブルを結合して Nested 構造を作る",
+      "description": "はじめに AWS CDK で OpenSearch のインデックスに Nested 型フィールドを定義してフィルタやソートをできるようにするの記事では、Todo の中に assignees を Nested 型として持つ構造を扱いました。 しかし、実際の開発では「Todo テーブル」と「TodoAssignee テーブル」のように、データが複数のテーブルに正規化されているケースも多く存在します。 ",
+      "url": "https://zenn.dev/lnest_knowledge/articles/dd2120a2fea4c6",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ikjiiebt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenSearch%2520%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25AE%2520Lambda%2520Processor%2520%25E3%2581%25A7%25E5%2588%25A5%25E3%2583%2586%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E3%2582%2592%25E7%25B5%2590%25E5%2590%2588%25E3%2581%2597%25E3%2581%25A6%2520Nested%2520%25E6%25A7%258B%25E9%2580%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-12-01T10:27:49.062+09:00",
+      "tags": [
+        "AWS",
+        "AWS Lambda",
+        "Amplify",
+        "DynamoDB",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "a0fe35692ba20c",
+      "title": "AWS CDK で OpenSearch のインデックスに Nested 型フィールドを定義してフィルタやソートをできるようにする",
+      "description": "はじめに Amplify Gen2 × Amazon OpenSearch Service 実践解説 — OSISでDynamoDB連携をCDK構築 の記事では、基本的なデータ連携の構築方法について解説しました。 今回はその拡張として、取り込むデータ構造がより複雑な場合、具体的には「配列（リスト）」の中にオブジェクトを持つ Nested 型フィールドを定義し、それに対して検索（フィルタリング）やソ",
+      "url": "https://zenn.dev/lnest_knowledge/articles/a0fe35692ba20c",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--o6ac7E9v--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520CDK%2520%25E3%2581%25A7%2520OpenSearch%2520%25E3%2581%25AE%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2587%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%25AB%2520Nested%2520%25E5%259E%258B%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2589%25E3%2582%2592%25E5%25AE%259A%25E7%25BE%25A9%25E3%2581%2597%25E3%2581%25A6%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25AB%25E3%2582%25BF%25E3%2582%2584%25E3%2582%25BD%25E3%2583%25BC%25E3%2583%2588%25E3%2582%2592...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-11-28T18:10:15.281+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "検索",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "9b25d3a95baee1",
+      "title": "Amplify Gen2 のCDKで環境識別子から固定のハッシュを生成して、リソース名の衝突と再作成を防ぐ方法",
+      "description": "はじめに 前回の記事「Amplify Gen2 で OpenSearch を設定したらホットリロードの度にサンドボックス反映が15分かかるようになった話」では、OpenSearch Ingestion（OSIS）パイプラインのリソース名（物理名）がデプロイごとに変わってしまい、毎回作り直しが発生していた問題について解説しました。 その記事の解決策として、 実際のプロジェクトでは、環境識別子から短い",
+      "url": "https://zenn.dev/lnest_knowledge/articles/9b25d3a95baee1",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--JOzyNRsy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Amplify%2520Gen2%2520%25E3%2581%25AECDK%25E3%2581%25A7%25E7%2592%25B0%25E5%25A2%2583%25E8%25AD%2598%25E5%2588%25A5%25E5%25AD%2590%25E3%2581%258B%25E3%2582%2589%25E5%259B%25BA%25E5%25AE%259A%25E3%2581%25AE%25E3%2583%258F%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E3%2583%25AA%25E3%2582%25BD%25E3%2583%25BC%25E3%2582%25B9%25E5%2590%258D%25E3%2581%25AE%25E8%25A1%259D%25E7%25AA%2581%25E3%2581%25A8%25E5%2586%258D%25E4%25BD%259C%25E6%2588%2590%25E3%2582%2592%25E9%2598%25B2%25E3%2581%2590%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-11-20T19:45:23.466+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "AWS CloudFormation",
+        "AWS CDK"
+      ]
+    },
+    {
+      "id": "f6eecee0b0fd7f",
+      "title": "Amplify Gen2 で OpenSearch を設定したらホットリロードの度にサンドボックス反映が15分かかるようになった話",
+      "description": "はじめに この記事は 「Amplify Gen2 × Amazon OpenSearch Service 実践解説 — OSISでDynamoDB連携をCDK構築」 で紹介した構成を、実際の業務プロジェクトに適用し、複数の開発者が同時に開発できるようにしたときに何が起きたか を振り返る実録記事です。 上記の記事では、Amplify Gen2 のバックエンドに OpenSearch / OSIS を",
+      "url": "https://zenn.dev/lnest_knowledge/articles/f6eecee0b0fd7f",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--c2BbOXK9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Amplify%2520Gen2%2520%25E3%2581%25A7%2520OpenSearch%2520%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2583%259B%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AA%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E5%25BA%25A6%25E3%2581%25AB%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2589%25E3%2583%259C%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E5%258F%258D%25E6%2598%25A0%25E3%2581%258C15%25E5%2588%2586%25E3%2581%258B%25E3%2581%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-11-18T15:43:44.692+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "AWS CloudFormation",
+        "AWS CDK",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "5bc2450636ecec",
+      "title": "AWS CDK で Amazon OpenSearch Service のパイプラインは YAML の代わりに JSON で定義できる！",
+      "description": "はじめに この記事は 「Amplify Gen2 × Amazon OpenSearch Service 実践解説 — OSISでDynamoDB連携をCDK構築」 の補足解説記事です。前編で YAML 文字列として示した OSIS パイプライン定義を、JSON オブジェクトで記述する場合の具体例を整理します。 前編では、OSIS（OpenSearch Ingestion Service）のパイプ",
+      "url": "https://zenn.dev/lnest_knowledge/articles/5bc2450636ecec",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--lYr4y6Bs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520CDK%2520%25E3%2581%25A7%2520Amazon%2520OpenSearch%2520Service%2520%25E3%2581%25AE%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25AF%2520YAML%2520%25E3%2581%25AE%25E4%25BB%25A3%25E3%2582%258F%25E3%2582%258A%25E3%2581%25AB%2520J...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-11-14T18:08:59.168+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "AWS CloudFormation",
+        "AWS CDK",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "e626d2a0aa49ce",
+      "title": "Amplify Gen2 × Amazon OpenSearch Service 実践解説 — OSISでDynamoDB連携をCDK構築",
+      "description": "はじめに Amplify Gen2 で構築した Web アプリで OpenSearch を利用する機会があり、CDK と OpenSearch の設定について理解を深めました。本記事では、その知見を整理し、公式ガイドのコードをもとに実装の意図や実運用での注意点を解説します。 出典: Amplify Docs「Connect to Amazon OpenSearch for search and a",
+      "url": "https://zenn.dev/lnest_knowledge/articles/e626d2a0aa49ce",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--YRkJ6a3r--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Amplify%2520Gen2%2520%25C3%2597%2520Amazon%2520OpenSearch%2520Service%2520%25E5%25AE%259F%25E8%25B7%25B5%25E8%25A7%25A3%25E8%25AA%25AC%2520%25E2%2580%2594%2520OSIS%25E3%2581%25A7Dyna...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-11-13T18:10:43.461+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "AWS CloudFormation",
+        "AWS CDK",
+        "OpenSearch"
+      ]
+    },
+    {
+      "id": "26727b277508f9",
+      "title": "Nuxt3 × Amplify Gen2 で環境変数が自動上書きされない落とし穴とboolean型の注意点",
+      "description": "はじめに AWS Amplify Gen2上にNuxt3アプリケーションをデプロイした際、「Amplifyの環境変数設定がローカルのように自動で上書きされない」という落とし穴に遭遇しました。本記事では、その仕様と注意点、さらに追加で発生したboolean型の取り扱いについても解説します。Amplifyで環境変数を利用する際の実践的な知見を共有します。 Nuxt3の環境変数の基本的な設定方法 まず、",
+      "url": "https://zenn.dev/lnest_knowledge/articles/26727b277508f9",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--b08-MdCy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Nuxt3%2520%25C3%2597%2520Amplify%2520Gen2%2520%25E3%2581%25A7%25E7%2592%25B0%25E5%25A2%2583%25E5%25A4%2589%25E6%2595%25B0%25E3%2581%258C%25E8%2587%25AA%25E5%258B%2595%25E4%25B8%258A%25E6%259B%25B8%25E3%2581%258D%25E3%2581%2595%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E7%25A9%25B4%25E3%2581%25A8boolean%25E5%259E%258B%25E3%2581%25AE%25E6%25B3%25A8%25E6%2584%258F%25E7%2582%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-06-03T18:59:37.038+09:00",
+      "tags": [
+        "AWS",
+        "Amplify",
+        "環境変数",
+        "Nuxt 3"
+      ]
+    },
+    {
+      "id": "a1143669b90a76",
+      "title": "AIで加速するエンジニアの情報発信：効率的な記事作成と思考整理の新スタイル",
+      "description": "はじめに 「自分の得た知見を他のエンジニアにも共有したい」「便利なツールや解決策を広めたい」 エンジニアであれば、このように考えた経験は少なくないのではないでしょうか。私自身も、技術記事やアイデアの発信は、コミュニティへの貢献はもちろん、自身の知識整理やキャリア形成にも繋がる価値ある活動だと考えています。 しかし、「記事を書く時間がない」「文章を書くのが苦手」といった理由で、情報発信をためらったり",
+      "url": "https://zenn.dev/lnest_knowledge/articles/a1143669b90a76",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--RaGfFECI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E5%258A%25A0%25E9%2580%259F%25E3%2581%2599%25E3%2582%258B%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E6%2583%2585%25E5%25A0%25B1%25E7%2599%25BA%25E4%25BF%25A1%25EF%25BC%259A%25E5%258A%25B9%25E7%258E%2587%25E7%259A%2584%25E3%2581%25AA%25E8%25A8%2598%25E4%25BA%258B%25E4%25BD%259C%25E6%2588%2590%25E3%2581%25A8%25E6%2580%259D%25E8%2580%2583%25E6%2595%25B4%25E7%2590%2586%25E3%2581%25AE%25E6%2596%25B0%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-04-21T14:32:04.247+09:00",
+      "tags": [
+        "AI",
+        "Cursor",
+        "開発効率",
+        "情報発信"
+      ]
+    },
+    {
+      "id": "2d836678d4c0ca",
+      "title": "Amplify バックエンドにおける循環参照エラーの回避策",
+      "description": "はじめに Amplify Gen2 を使用してバックエンドを構築する際、リソース間の依存関係が原因で循環参照エラーが発生することがあります。この記事では、特に S3 トリガー関数と他の関数/リソース間で発生しやすい循環参照エラーの原因と、resourceGroupName を用いた解決策について解説します。 循環参照エラーとは？ Amplify でリソースをデプロイする際、CloudFormati",
+      "url": "https://zenn.dev/lnest_knowledge/articles/2d836678d4c0ca",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--cWRcvfIO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Amplify%2520%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2589%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E5%25BE%25AA%25E7%2592%25B0%25E5%258F%2582%25E7%2585%25A7%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%25AE%25E5%259B%259E%25E9%2581%25BF%25E7%25AD%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-04-18T18:19:50.379+09:00",
+      "tags": [
+        "AWS",
+        "AWS Lambda",
+        "Amplify",
+        "AWS CloudFormation",
+        "AWS CDK"
+      ]
+    },
+    {
+      "id": "dbf72c594473e3",
+      "title": "Amplify環境でAWSアカウント毎にLambdaレイヤーを切り替える方法",
+      "description": "はじめに AWS Amplify を利用して開発環境と本番環境で AWS アカウントを分けて運用している場合、Lambda レイヤーの管理で問題が発生することがあります。特に、Amplify の管理外で手動でアップロードしている Lambda レイヤーがある場合に顕著です。 この記事では、そのような状況で発生する問題と、CDK のカスタムリソースと AWS SDK を利用して解決する方法について解",
+      "url": "https://zenn.dev/lnest_knowledge/articles/dbf72c594473e3",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--eK3NgnwK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Amplify%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7AWS%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E6%25AF%258E%25E3%2581%25ABLambda%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%25E3%2582%2592%25E5%2588%2587%25E3%2582%258A%25E6%259B%25BF%25E3%2581%2588%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ToMY%2520F.%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI5NDcwY2E5ZjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25AA%25E3%2583%2590%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MU95c0MwNmdTblpsVHZMazBxeVVYT0lZeGNGS1BPVHVKRzNmaz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "publishedAt": "2025-04-15T17:17:41.178+09:00",
+      "tags": [
+        "AWS",
+        "AWS Lambda",
+        "Amplify",
+        "AWS CDK"
+      ]
+    }
+  ]
 }
